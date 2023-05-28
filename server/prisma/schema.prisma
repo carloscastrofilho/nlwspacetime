@@ -10,9 +10,24 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  if String @id @default(uuid())
-  name String
-  email String
+  id        String   @id @default(uuid())
+  githubId  Int      @unique
+  name      String
+  email     String
+  login     String
+  avatarUrl String
+  createAt  DateTime @default(now())
+  memories  Memory[]
+}
+
+model Memory {
+  id       String   @id @default(uuid())
+  userId   String
+  coverUrl String
+  content  String
+  isPublic Boolean  @default(false)
+  createAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
 }
