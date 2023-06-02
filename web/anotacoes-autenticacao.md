@@ -20,3 +20,13 @@ CLIENT-SECRET
 f9c4c211c74ccf8a076988faaa2deb90027746ae
 
 code=219c38b65b414966e3ca
+
+instalando dependencia Axios
+npm i axios
+ou 
+yarn add axios
+
+para decodificar o token, vamos usa o jwt-decode
+npm i jwt-decode
+ou 
+yarn add jwt-decode
