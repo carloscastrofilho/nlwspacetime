@@ -30,3 +30,9 @@ para decodificar o token, vamos usa o jwt-decode
 npm i jwt-decode
 ou 
 yarn add jwt-decode
+
+
+tailwindcss/forms
+
+https://github.com/tailwindlabs/tailwindcss-forms
+

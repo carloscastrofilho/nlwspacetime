@@ -20,6 +20,6 @@ app.register(jwt, {
 app.register(authRoutes)
 app.register(memoriesRoutes)
 
-app.listen({ port: 3333 }).then(() => {
+app.listen({ port: 3333, host: '0.0.0.0' }).then(() => {
   console.log('🚀 Servidor Rodando porta: 3333 , em http://localhost:3333')
 })
